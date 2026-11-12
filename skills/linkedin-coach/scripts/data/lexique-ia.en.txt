@@ -1,0 +1,54 @@
+# AI-tell lexicon (English) — one term or phrase per line, lowercase.
+# Lines starting with # are comments. See CONTRIBUTING.md to add terms.
+# Inspired by li-human (Jakeschincariol/linkedin-agent-skill, MIT); list rewritten.
+delve
+delves
+delving
+leverage
+leveraging
+seamless
+seamlessly
+game-changer
+game changer
+robust
+crucial
+pivotal
+tapestry
+landscape
+realm
+testament
+unlock
+unleash
+elevate
+empower
+streamline
+synergy
+cutting-edge
+transformative
+revolutionize
+unparalleled
+in today's fast-paced world
+in the era of
+it's not just
+it's important to note
+it is important to note
+ever-evolving
+navigate the complexities
+at the end of the day
+moreover
+furthermore
+ultimately
+embark
+journey
+holistic
+paradigm
+deep dive
+harness
+foster
+spearhead
+best-in-class
+world-class
+next-level
+nothing will ever be the same
+ready to unlock
+sustainable growth

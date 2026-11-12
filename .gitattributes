@@ -1,0 +1,10 @@
+# Fins de ligne identiques sur macOS, Linux et Windows (tests et fixtures reproductibles).
+* text=auto eol=lf
+
+# Scripts PowerShell de Spec Kit : CRLF attendu sous Windows.
+*.ps1 text eol=crlf
+
+# Binaires
+*.zip binary
+*.png binary
+*.pdf binary

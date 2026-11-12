@@ -1,0 +1,9 @@
+Mardi dernier, notre mise en production a planté à 18 h 40.
+
+Je m'en souviens parce que j'avais promis à ma fille d'être rentré pour le dîner. On a passé deux heures à chercher. Le coupable tenait en une ligne : un cache Dispatcher qu'on n'invalidait plus depuis la migration vers AEM as a Cloud Service.
+
+Nous avions pourtant tout testé en recette. Sauf la recette n'avait pas de CDN devant.
+
+Ce que j'en retiens ? Pas grand-chose de neuf, honnêtement. On teste ce qui ressemble à la prod, ou on teste un décor. Depuis, j'ai ajouté un contrôle qui compare les en-têtes de cache des deux environnements avant chaque livraison. Il nous a déjà évité un deuxième dîner raté.
+
+Et vous, quel écart entre recette et production vous a coûté le plus cher l'an dernier ?

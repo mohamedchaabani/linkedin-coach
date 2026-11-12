@@ -1,0 +1,9 @@
+Last Tuesday our release broke at 6:40 pm.
+
+I remember because I'd promised my daughter I'd be home for dinner. We spent two hours looking. The culprit was one line: a Dispatcher cache we'd stopped invalidating after the move to AEM as a Cloud Service.
+
+We had tested everything in staging. Except staging had no CDN in front of it.
+
+What did I learn? Nothing new, honestly. You either test something that looks like prod, or you test a stage set. Since then I've added a check that compares cache headers between both environments before every release. It already saved us a second missed dinner.
+
+What gap between staging and production cost you the most last year?

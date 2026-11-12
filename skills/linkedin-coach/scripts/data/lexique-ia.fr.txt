@@ -1,0 +1,65 @@
+# Lexique IA (français) — un terme ou une expression par ligne, en minuscules.
+# Les lignes commençant par # sont des commentaires. Voir CONTRIBUTING.md pour en ajouter.
+# Termes de base repris du prototype LinkedIn Coach ; idée d'origine : li-human
+# (Jakeschincariol/linkedin-agent-skill, MIT).
+crucial
+cruciale
+essentiel
+essentielle
+incontournable
+véritable
+levier
+leviers
+robuste
+fluide
+booster
+boostée
+boosté
+plonger
+synergie
+synergies
+passionné
+passionnée
+motivé
+motivée
+dynamique
+orienté résultats
+orientée résultats
+rigoureux
+expert reconnu
+game-changer
+change la donne
+dans un monde en constante évolution
+à l'ère de
+n'est pas qu'un simple
+force est de constater
+il est essentiel de
+il est important de noter
+révolutionner
+révolution
+transformer la façon
+paradigme
+écosystème
+holistique
+optimiser
+optimisation
+sans précédent
+au cœur de
+véritable révolution
+tirer parti
+pleinement
+en somme
+en définitive
+plus que jamais
+de manière significative
+indéniablement
+incontestablement
+résolument
+catalyseur
+pierre angulaire
+fer de lance
+valeur ajoutée
+agilité renforcée
+croissance durable
+passer à l'action
+rien ne sera plus comme avant

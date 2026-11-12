@@ -1,0 +1,24 @@
+# Build
+dist/
+
+# Résultats des évaluations (claude plugin eval)
+tests/evals/results/
+eval-results.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Claude Code (local settings may contain private data)
+.claude/settings.local.json
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp

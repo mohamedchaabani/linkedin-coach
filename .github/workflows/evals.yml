@@ -1,0 +1,44 @@
+name: Évaluations comportementales
+
+# Lance les suites `claude plugin eval` de tests/evals/. Elles consomment des appels au
+# modèle et demandent le secret ANTHROPIC_API_KEY : déclenchement manuel uniquement, jamais
+# sur les PR (les PR externes n'ont pas accès aux secrets).
+on:
+  workflow_dispatch:
+    inputs:
+      case:
+        description: "Filtre de cas (glob), ex. navigateur/*"
+        required: false
+        default: "*"
+      runs:
+        description: "Exécutions par cas"
+        required: false
+        default: "1"
+
+permissions:
+  contents: read
+
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Installer Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Lancer les évaluations
+        run: >
+          claude plugin eval . --eval-dir tests/evals --trust-plugin --no-publish
+          --case "${{ inputs.case }}" --runs "${{ inputs.runs }}" --max-cost-usd 10
+          --json eval-results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results
+          path: |
+            eval-results.json
+            tests/evals/results/

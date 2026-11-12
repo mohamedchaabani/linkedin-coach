@@ -1,0 +1,7 @@
+J'ai migré 40 sites AEM vers le cloud en neuf mois.
+
+Le plus dur n'a pas été la technique. C'était de convaincre chaque équipe métier de supprimer des composants qu'elle n'utilisait plus. Nous en avons retiré 212 sur 530.
+
+Ma règle, au bout du compte : si personne ne sait dire à quoi sert un composant, on le désactive pendant un sprint. Si personne ne se plaint, on le supprime.
+
+Quel est le composant le plus inutile que vous ayez dû maintenir ?

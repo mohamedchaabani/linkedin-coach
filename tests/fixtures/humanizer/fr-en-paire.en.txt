@@ -1,0 +1,7 @@
+I migrated 40 AEM sites to the cloud in nine months.
+
+The hardest part wasn't the tech. It was convincing each business team to delete components they no longer used. We removed 212 out of 530.
+
+My rule, in the end: if nobody can say what a component is for, we disable it for one sprint. If nobody complains, we delete it.
+
+What's the most useless component you've ever had to maintain?

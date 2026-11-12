@@ -1,0 +1,20 @@
+Copier-coller de mon profil (données fictives)
+
+TITRE
+Architecte AEM chez Cabinet Exemple
+
+INFOS
+Passionné par le digital depuis plus de 10 ans, j'accompagne mes clients dans leur transformation numérique. Rigoureux et orienté résultats, j'interviens sur des projets Adobe Experience Manager de toutes tailles. N'hésitez pas à me contacter !
+
+EXPÉRIENCE
+Architecte AEM — Cabinet Exemple (mars 2021 - aujourd'hui)
+- Responsable de l'architecture AEM pour plusieurs clients
+- Participation à la migration vers AEM as a Cloud Service
+- Animation d'ateliers techniques
+
+Développeur AEM senior — ESN Fictive (septembre 2016 - février 2021)
+- Développement de composants AEM
+- Mise en place de pipelines CI/CD
+
+COMPÉTENCES
+Adobe Experience Manager · Java · Gestion de projet

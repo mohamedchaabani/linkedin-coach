@@ -1,0 +1,19 @@
+{
+  "name": "linkedin-coach",
+  "version": "0.1.0",
+  "description": "Audit noté du profil et des posts LinkedIn, réécritures et posts humanisés pour être trouvé par les recruteurs. / Scored LinkedIn profile and post audit, rewrites and human-sounding posts.",
+  "author": {
+    "name": "Mohamed Chaabani"
+  },
+  "license": "MIT",
+  "keywords": [
+    "linkedin",
+    "recrutement",
+    "recruiting",
+    "profil",
+    "posts",
+    "humanizer"
+  ],
+  "homepage": "https://github.com/mohamedchaabani/linkedin-coach",
+  "repository": "https://github.com/mohamedchaabani/linkedin-coach"
+}

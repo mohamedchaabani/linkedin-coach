@@ -1,0 +1,22 @@
+Copier-coller de mon profil (données fictives)
+
+TITRE
+Architecte AEM certifié Adobe | AWS Solutions Architect | Migrations cloud
+
+INFOS
+J'aide les banques à migrer leurs sites AEM vers le cloud sans interruption de service.
+
+EXPÉRIENCE
+Architecte AEM — Cabinet Exemple (mars 2021 - juin 2025)
+Poste actuel
+- Migration de 40 sites vers AEM as a Cloud Service
+
+Développeur AEM senior — ESN Fictive (septembre 2016 - février 2021)
+
+LICENCES ET CERTIFICATIONS
+Adobe Certified Expert - AEM Sites Architect — Adobe
+Délivrée mai 2023 · Expire mai 2025
+(affichée en tête de profil comme « certification active »)
+
+AWS Certified Solutions Architect - Associate — Amazon Web Services
+Délivrée janvier 2024 · Expire janvier 2027

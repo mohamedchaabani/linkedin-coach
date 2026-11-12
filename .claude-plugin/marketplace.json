@@ -1,0 +1,14 @@
+{
+  "name": "linkedin-coach",
+  "description": "LinkedIn Coach : skill open source pour Claude (audit, réécritures, posts humanisés).",
+  "owner": {
+    "name": "Mohamed Chaabani"
+  },
+  "plugins": [
+    {
+      "name": "linkedin-coach",
+      "source": "./",
+      "description": "Audit noté du profil et des posts LinkedIn, réécritures et posts humanisés pour être trouvé par les recruteurs."
+    }
+  ]
+}

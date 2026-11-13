@@ -2,14 +2,32 @@
 
 *[English version](README.md)*
 
+**Un coach LinkedIn qui se souvient de vous, vous note, suit votre progression et écrit des
+posts qui ne sonnent pas « IA ».**
+
 Un skill open source pour Claude qui vous aide à **être trouvé et contacté par des
 recruteurs et des clients** sur LinkedIn : audit noté de votre profil et de vos posts,
-réécritures prêtes à copier, posts courts qui ne sonnent pas « IA ».
+réécritures prêtes à copier, posts courts construits sur votre vrai travail.
 
 Gratuit, sous licence MIT, sans service payant ni dépendance. Fonctionne avec Claude Code
 (macOS, Windows, Linux) et dans l'app Claude (web, desktop, iPhone/iPad, Android). Associé à
 **Claude in Chrome**, il peut lire votre propre profil et appliquer les modifications que
 vous validez.
+
+## Pourquoi pas simplement demander à Claude ?
+
+Vous parlez toujours à Claude en langage naturel. Le skill change ce que Claude en fait :
+
+| | Claude seul | Avec LinkedIn Coach |
+|---|---|---|
+| **Mémoire** | Redemande qui vous êtes à chaque conversation | 7 questions une seule fois ; votre positionnement est enregistré et réutilisé |
+| **Notation** | Un avis vague, différent à chaque fois | Profil sur 100 selon une grille fixe de 12 critères, posts sur 20 |
+| **Progression** | Aucun historique | Chaque audit est enregistré ; vous voyez votre note évoluer d'un audit à l'autre |
+| **Texte « IA »** | Formulations génériques, vocabulaire d'IA | Passe humanizer avec score avant/après (5 critères, lexiques FR et EN) |
+| **Faits** | Tendance à enjoliver (« +40 % de performance ») | Rien d'inventé : une donnée manquante devient `{{à confirmer}}` |
+| **Vos données** | Vous collez les sections à la main | Lit directement l'archive officielle LinkedIn |
+| **Agir sur le profil** | — | Avec Claude in Chrome : applique chaque modification après votre « oui », puis la vérifie sur la page. Ne publie jamais |
+| **Méthode** | Conseils généraux | 20 formules d'accroche, règles de format LinkedIn, corrections classées par points perdus, notes sévères |
 
 ## Ce que fait le skill
 

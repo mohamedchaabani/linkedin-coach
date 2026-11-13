@@ -2,13 +2,31 @@
 
 *[Version française](README.fr.md)*
 
+**A LinkedIn coach that remembers you, scores you, tracks your progress, and writes posts
+that don't sound like AI.**
+
 An open source skill for Claude that helps you **get found and contacted by recruiters and
 clients** on LinkedIn: a scored audit of your profile and posts, ready-to-paste rewrites,
-and short posts that don't sound like AI.
+and short posts built on your real work.
 
 Free, MIT-licensed, no paid service and no dependencies. Works with Claude Code (macOS,
 Windows, Linux) and in the Claude app (web, desktop, iPhone/iPad, Android). Paired with
 **Claude in Chrome**, it can read your own profile and apply the changes you approve.
+
+## Why not just ask Claude?
+
+You still talk to Claude in plain language. The skill changes what Claude does with it:
+
+| | Claude on its own | With LinkedIn Coach |
+|---|---|---|
+| **Memory** | Asks who you are in every conversation | 7 questions once; your positioning is saved and reused |
+| **Scoring** | A different, vague opinion each time | Profile out of 100 on a fixed 12-criteria rubric, posts out of 20 |
+| **Progress** | No history | Every audit is logged; you see your score move from one audit to the next |
+| **AI-sounding text** | Generic phrasing, AI vocabulary | Humanizer pass with a before/after score (5 criteria, FR and EN lexicons) |
+| **Facts** | Tends to embellish ("+40% performance") | Nothing made up: missing data becomes `{{à confirmer}}` |
+| **Your data** | You paste sections by hand | Reads the official LinkedIn data archive directly |
+| **Acting on your profile** | — | With Claude in Chrome: applies each change after your "yes", then checks it on the page. Never publishes |
+| **Method** | General advice | 20 hook formulas, LinkedIn format rules, fixes ordered by points lost, strict scores |
 
 ## What the skill does
 

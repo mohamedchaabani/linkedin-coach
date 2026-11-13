@@ -13,6 +13,13 @@ Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 - README principal en anglais (`README.fr.md` en français), tutoriel pas à pas,
   connexion de Claude in Chrome, section « Pourquoi pas simplement demander à Claude ? ».
 
+### Corrigé
+
+- Lecture du profil dans le navigateur : LinkedIn charge Infos, Sélection et Compétences
+  principales en différé. Le skill fait défiler toute la page, attend la fin du chargement
+  et vérifie chaque section avant de noter. Une section non vue est « non évaluée »,
+  jamais notée 0.
+
 ## [0.1.0] - 2026-11-13
 
 ### Ajouté

@@ -31,6 +31,11 @@ synergie.
   bug : chaque point accordé doit être justifié par ce qui est visible.
 - **Non évalué.** Un critère dont la section n'a pas été fournie est marqué « non évalué »
   et ne reçoit **aucun** point. Il sort aussi du maximum.
+- **Absent ≠ non vu.** 0 point seulement pour une section dont l'absence est **confirmée**
+  (par l'utilisateur, ou page entièrement chargée). Une section simplement pas vue, par
+  exemple pas encore chargée dans le navigateur, est « non évaluée ». Dans le doute,
+  demander : « Je ne vois pas de section Infos : elle est vraiment vide, ou tu peux me la
+  coller ? »
 - **Affichage.** `NOTE PROFIL <points>/<maximum atteignable>` suivi de
   `(N critères non évalués)` si N > 0. Avec les 12 critères évalués, le maximum vaut 100.
   Exemple : bannière et photo non fournies → `NOTE PROFIL 41/88 (2 critères non évalués)`.

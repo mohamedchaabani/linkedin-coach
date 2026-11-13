@@ -42,6 +42,22 @@ Seulement si un outil de navigation est **déjà** connecté au compte de l'util
 qu'il l'accepte. Lire **uniquement son propre profil**, sans rien modifier à cette étape.
 Pour toute modification : `references/navigateur.md`.
 
+LinkedIn charge les sections **en différé** (Infos, Compétences principales, Sélection,
+Expérience, Recommandations…). Une lecture faite trop tôt les rate sans erreur visible.
+Avant de noter :
+
+1. Faire défiler la page **jusqu'en bas, par paliers**, en attendant quelques secondes à
+   chaque palier.
+2. Vérifier qu'il ne reste **aucun bloc en cours de chargement** (squelettes gris) ; sinon
+   attendre et relire.
+3. Relire le texte de la page et vérifier, section par section, la présence des titres :
+   Infos, Compétences principales, Sélection, Expérience, Licences et certifications,
+   Compétences, Recommandations.
+4. Section dont le titre n'a pas été vu → **« non évaluée (non lue) »**, jamais 0. Le
+   dire à l'utilisateur et lui demander de confirmer qu'elle est absente, ou de la coller.
+   Ne conclure « absente » (0 point) que si l'utilisateur le confirme ou si la page est
+   entièrement chargée et que LinkedIn propose de l'ajouter.
+
 ## Statistiques des posts
 
 - **Export Analytics** : LinkedIn → Analytics → Contenu → Exporter (fichier tableur). S'il

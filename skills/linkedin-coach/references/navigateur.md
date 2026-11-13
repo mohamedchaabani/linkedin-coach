@@ -40,4 +40,9 @@ texte prêt à copier.
 ## Lecture seule (import)
 
 Pour lire son propre profil avant un audit : naviguer uniquement sur l'URL de son profil,
-lire, ne rien cliquer qui modifie. Voir `references/sources-profil.md`.
+lire, ne rien cliquer qui modifie. Faire défiler toute la page et attendre la fin du
+chargement différé avant de conclure qu'une section manque : voir
+`references/sources-profil.md`, section 4.
+
+Avant une modification, relire **la section visée** sur la page (étape 1 de la séquence) :
+si elle n'apparaît pas, ne pas la supposer vide.

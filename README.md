@@ -29,6 +29,64 @@ You still talk to Claude in plain language. The skill changes what Claude does w
 | **Shortcuts** | Free-form chat only | Dedicated commands: `/linkedin-coach:audit`, `:improve`, `:post`, `:positioning` |
 | **Method** | General advice | 20 hook formulas, LinkedIn format rules, fixes ordered by points lost, strict scores |
 
+## Before / after: a real profile
+
+The author ran the skill on their own LinkedIn profile (AEM architect, November 2026),
+then applied the changes through Claude in Chrome. Employer names are anonymized. Every
+number below was **supplied by the author**: the skill asked for them instead of making
+them up.
+
+### Score
+
+| Criterion | Before | After | What changed |
+|---|---|---|---|
+| About: body | 9/10 | **10/10** | A measured result added |
+| Featured | 3/8 | **8/8** | 1 item → 3: best post, a proof, a contact |
+| Other criteria | 67 | 67 | Unchanged |
+| **Profile score** | **79/100** | **85/100** | |
+
+Still open, and the skill says so: results with numbers for the current role (+6) and a
+headline that says who the work was for (+3).
+
+### Experience: tasks become results
+
+| | Before | After |
+|---|---|---|
+| Hotel group | Designed the target architecture and a new middleware layer, improving site performance | Designed the target architecture and a new middleware layer: **a daily job dropped from 6 h to 5 min** and no longer ties up the AEM author instances |
+| Luxury brand | *(nothing on delivery)* | Set up a GitLab CI/CD delivery workflow: **preparing a release dropped from 2 days to half a day**, from release creation to production deployment |
+
+### About: one proof with a number
+
+- Before: *At [hotel group], I moved the international hotel brands' websites from legacy
+  CMS platforms to AEM as a Cloud Service.*
+- After: *At [hotel group], I moved the international hotel brands' websites from legacy
+  CMS platforms to AEM as a Cloud Service, **with a middleware layer that cut a daily job
+  from 6 hours to 5 minutes**.*
+
+### Featured
+
+| Before | After |
+|---|---|
+| Portfolio link | 1. Best post by engagement (certification announcement, 3.5% engagement) |
+| | 2. Proof: this open source project |
+| | 3. Portfolio link (contact) |
+
+### A post (in French: the skill writes in your language)
+
+The weakest of the author's recent posts, before and after the humanizer pass (changed
+lines only). No fact was added. Scores measured by `scripts/humanizer.py`.
+
+| Before: **82/100** | After: **93/100** |
+|---|---|
+| Je viens de découvrir un outil open source qui vaut le détour : OmniRoute. | Je viens de découvrir OmniRoute. Un outil open source qui vaut le détour. |
+| Ce qui change tout : dès que tu tapes dans un quota, il bascule automatiquement sur un autre modèle. Fini de s'arrêter en plein milieu d'une session de code. | Ce qui m'intéresse le plus : quand tu atteins un quota, il bascule tout seul sur un autre modèle, et tu ne t'arrêtes plus en pleine session de code. |
+| 100 % open source, tout tourne en local, rien n'est envoyé ailleurs. | 100 % open source. Tout tourne en local. |
+| Ça montre bien à quelle vitesse évolue **l'écosystème** autour du coding assisté par IA. | Pour moi, ça montre la vitesse à laquelle bougent les outils de code assisté par IA. |
+| *(no question)* | Et vous, vous changez de modèle à la main quand le quota tombe ? |
+
+What changed: "écosystème" (a typical AI word) removed, a first-person voice, more varied
+sentence lengths, and a closing question that invites comments.
+
 ## What the skill does
 
 - **Audit**: profile score out of 100 (12 criteria), post score out of 20, inconsistencies

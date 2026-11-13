@@ -30,6 +30,65 @@ Vous parlez toujours à Claude en langage naturel. Le skill change ce que Claude
 | **Raccourcis** | Conversation libre uniquement | Commandes dédiées : `/linkedin-coach:audit`, `:improve`, `:post`, `:positioning` |
 | **Méthode** | Conseils généraux | 20 formules d'accroche, règles de format LinkedIn, corrections classées par points perdus, notes sévères |
 
+## Avant / après : un vrai profil
+
+L'auteur a passé son propre profil LinkedIn au skill (architecte AEM, novembre 2026), puis a
+appliqué les modifications via Claude in Chrome. Les noms d'employeurs sont anonymisés.
+Tous les chiffres ci-dessous ont été **fournis par l'auteur** : le skill les a demandés au
+lieu de les inventer.
+
+### Note
+
+| Critère | Avant | Après | Ce qui a changé |
+|---|---|---|---|
+| Infos : corps | 9/10 | **10/10** | Ajout d'un résultat mesuré |
+| Sélection | 3/8 | **8/8** | 1 élément → 3 : meilleur post, une preuve, un contact |
+| Autres critères | 67 | 67 | Inchangés |
+| **Note profil** | **79/100** | **85/100** | |
+
+Reste à faire, et le skill le dit : des résultats chiffrés pour le poste actuel (+6) et un
+titre qui dit pour qui le travail a été fait (+3).
+
+### Expérience : des tâches aux résultats
+
+| | Avant | Après |
+|---|---|---|
+| Groupe hôtelier | Designed the target architecture and a new middleware layer, improving site performance | Designed the target architecture and a new middleware layer: **a daily job dropped from 6 h to 5 min** and no longer ties up the AEM author instances |
+| Marque de luxe | *(rien sur la mise en production)* | Set up a GitLab CI/CD delivery workflow: **preparing a release dropped from 2 days to half a day**, from release creation to production deployment |
+
+### Infos : une preuve chiffrée
+
+- Avant : *At [groupe hôtelier], I moved the international hotel brands' websites from
+  legacy CMS platforms to AEM as a Cloud Service.*
+- Après : *At [groupe hôtelier], I moved the international hotel brands' websites from
+  legacy CMS platforms to AEM as a Cloud Service, **with a middleware layer that cut a
+  daily job from 6 hours to 5 minutes**.*
+
+### Sélection
+
+| Avant | Après |
+|---|---|
+| Lien vers le portfolio | 1. Meilleur post en engagement (annonce de certification, 3,5 %) |
+| | 2. Preuve : ce projet open source |
+| | 3. Lien vers le portfolio (contact) |
+
+### Un post
+
+Le plus faible des posts récents de l'auteur, avant et après la passe humanizer (lignes
+modifiées seulement). Aucun fait n'a été ajouté. Scores mesurés par
+`scripts/humanizer.py`.
+
+| Avant : **82/100** | Après : **93/100** |
+|---|---|
+| Je viens de découvrir un outil open source qui vaut le détour : OmniRoute. | Je viens de découvrir OmniRoute. Un outil open source qui vaut le détour. |
+| Ce qui change tout : dès que tu tapes dans un quota, il bascule automatiquement sur un autre modèle. Fini de s'arrêter en plein milieu d'une session de code. | Ce qui m'intéresse le plus : quand tu atteins un quota, il bascule tout seul sur un autre modèle, et tu ne t'arrêtes plus en pleine session de code. |
+| 100 % open source, tout tourne en local, rien n'est envoyé ailleurs. | 100 % open source. Tout tourne en local. |
+| Ça montre bien à quelle vitesse évolue **l'écosystème** autour du coding assisté par IA. | Pour moi, ça montre la vitesse à laquelle bougent les outils de code assisté par IA. |
+| *(pas de question)* | Et vous, vous changez de modèle à la main quand le quota tombe ? |
+
+Ce qui a changé : « écosystème » (mot typique de l'IA) retiré, une voix à la 1re personne,
+des phrases de longueurs plus variées, et une question finale qui invite aux commentaires.
+
 ## Ce que fait le skill
 
 - **Audit** : note du profil sur 100 (12 critères), note des posts sur 20, incohérences

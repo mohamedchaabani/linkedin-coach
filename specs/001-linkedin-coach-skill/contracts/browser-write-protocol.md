@@ -31,6 +31,24 @@ passe ; activer l'annonce au réseau sans accord explicite séparé.
    qui a été appliqué ou non, fournir le texte à copier. Ne pas réessayer sans nouvelle
    validation.
 
+## Lecture fiable (FR-016)
+
+LinkedIn charge les sections en différé. Avant de noter ou de modifier :
+
+1. Défiler toute la page par paliers, en attendant à chaque palier.
+2. Vérifier qu'aucun bloc n'est encore en squelette de chargement ; sinon attendre et relire.
+3. Vérifier la présence de chaque titre (Infos, Compétences principales, Sélection,
+   Expérience, Licences et certifications, Compétences, Recommandations).
+4. Titre non vu → « non évaluée (non lue) » et question à l'utilisateur ; jamais 0.
+
+Constats de mise en œuvre (2026-11-13, profil réel de l'auteur) :
+
+- La saisie clavier simulée peut perdre des caractères : relire la valeur exacte du champ
+  avant d'enregistrer, et corriger si besoin.
+- La section Infos et les descriptions d'expérience sont des éditeurs riches : placer le
+  curseur sur le texte visé, saisir, puis relire le texte complet de l'éditeur.
+- Vérifier que l'interrupteur « informer votre réseau » est désactivé avant d'enregistrer.
+
 ## Preuves attendues (tests)
 
 - Évaluation : pour chaque scénario d'écriture, la demande de validation apparaît avant

@@ -106,6 +106,12 @@ specs/001-linkedin-coach-skill/
 ├── marketplace.json            # Marketplace pointant vers le plugin "./"
 └── plugin.json                 # Métadonnées du plugin (nom, version, licence)
 
+commands/                       # Commandes Claude Code (FR-008, ajoutées en 0.2.0)
+├── audit.md                    # /linkedin-coach:audit
+├── improve.md                  # /linkedin-coach:improve
+├── post.md                     # /linkedin-coach:post
+└── positioning.md              # /linkedin-coach:positioning
+
 skills/linkedin-coach/          # Unique source du skill (plugin, npx, copie, .zip)
 ├── SKILL.md                    # ≤ 150 lignes : règles, détection mode/environnement, renvois
 ├── references/

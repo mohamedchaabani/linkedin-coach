@@ -249,6 +249,24 @@ unitaires utilisent `unittest` (stdlib) ; les tests de comportement sont des sui
 
 ---
 
+## Phase 11: Release 0.2.0 et retours d'usage réel (2026-11-13)
+
+**Purpose**: Commandes, README orienté adoption, correctif de lecture constaté sur un vrai profil
+
+- [X] T080 Publier `main` et la release `v0.1.0` sur GitHub (`mohamedchaabani/linkedin-coach`) ; CI verte sur ubuntu et windows (macOS : file d'attente GitHub, à relancer si annulé)
+- [X] T081 README principal en anglais (`README.md`), version française `README.fr.md` ; prérequis, installation app Claude, connexion Claude in Chrome, tutoriel en 7 étapes, section « Why not just ask Claude? » (FR-007)
+- [X] T082 [P] Créer `commands/audit.md`, `improve.md`, `post.md`, `positioning.md` ; documenter dans README, `docs/*/installation.md` et `docs/*/usage.md` (FR-008)
+- [X] T083 Corriger la lecture navigateur : `references/sources-profil.md` (défilement, attente, vérification des titres), `grille-profil.md` (absent ≠ non vu), `navigateur.md` (FR-016)
+- [X] T084 Rendre `tests/test_validate_skill.py::test_versions_differentes` indépendant du numéro de version
+- [X] T085 Avant/après réel dans les README (profil de l'auteur 79 → 85/100, anonymisé, chiffres fournis par l'auteur) et section « What the skill tells you next » (FR-009)
+- [X] T086 Release `v0.2.0` (CHANGELOG daté, tag, .zip publié par `release.yml`)
+- [X] T087 Installer 0.2.0 en réel : marketplace Claude Code (`linkedin-coach@linkedin-coach` activé), import du .zip dans l'app Claude ; ancien skill personnel `linkedin-coach-mohamed` désactivé (non supprimé)
+- [ ] T088 [P] Ajouter une évaluation `tests/evals/navigateur/` « section chargée en différé » : la sortie marque la section « non évaluée (non lue) » et pose la question, sans noter 0 (FR-016)
+- [ ] T089 [P] Ajouter une évaluation par commande (`tests/evals/commandes/`) : chaque commande lance le bon mode, avec et sans argument (FR-008)
+- [ ] T090 Relancer les jobs macOS de la CI si GitHub les annule faute de runner ; envisager macOS en Python 3.12 seulement si cela se répète
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies

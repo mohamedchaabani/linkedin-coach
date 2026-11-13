@@ -6,6 +6,17 @@
 - `description` (frontmatter) : bilingue, cite les déclencheurs « audit / profil / posts
   LinkedIn », « recruteurs », « audit my LinkedIn profile ». Doit déclencher sur
   « audite mon profil LinkedIn » (SC-002).
+- Commandes Claude Code (FR-008), dossier `commands/` à la racine du plugin :
+
+  | Commande | Mode | Argument |
+  |---|---|---|
+  | `/linkedin-coach:audit` | AUDIT | source du profil (optionnel) |
+  | `/linkedin-coach:improve` | AMÉLIORER | section et objectif (optionnel) |
+  | `/linkedin-coach:post` | POSTS | fait à raconter (optionnel) |
+  | `/linkedin-coach:positioning` | POSITIONNEMENT | changement (optionnel) |
+
+  Chaque commande ne fait que nommer le mode et passer `$ARGUMENTS` au skill ; toutes les
+  règles restent dans le skill. Absentes de l'app Claude (langage naturel uniquement).
 
 ## Séquence d'entrée (à chaque sollicitation)
 

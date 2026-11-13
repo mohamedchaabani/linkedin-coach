@@ -100,3 +100,14 @@ Exécution du 2026-11-12, Windows 11, Python 3.12.1, Claude Code 2.1.296.
 | 5.3 | ✅ `humanizer.py detect` : `fr-naturel` 94/100, voix 20/20 ; `fr-ia` 35/100 |
 | 7 | ✅ Scripts exécutés avec `socket` bloqué ; aucun import réseau |
 | CI 3 OS | ⏳ Workflow prêt ; à constater au premier push sur GitHub |
+
+Exécution du 2026-11-13, version 0.2.0, Windows 11, Claude Code et Claude in Chrome.
+
+| § | Résultat |
+|---|---|
+| 0 | ✅ `validate_skill.py --strict` OK ; 52 tests OK ; `claude plugin validate .` OK ; CI ubuntu et windows ✅ ; macOS annulé une fois faute de runner GitHub (pas un échec du code) |
+| 1 | ✅ Marketplace : `claude plugin marketplace add mohamedchaabani/linkedin-coach` puis `install` → `linkedin-coach@linkedin-coach` 0.2.0 activé, 4 commandes présentes. ✅ App Claude : import de `linkedin-coach-v0.2.0.zip` (17 fichiers), skill activé. Chronométrage non fait |
+| 2 | ✅ Positionnement enregistré dans `~/.linkedin-coach/positionnement.md` (repris de l'ancien skill personnel) |
+| 3 | ⚠ → ✅ Lecture navigateur du profil réel : 1re lecture trop tôt, Infos/Sélection/Compétences principales manquées et notées 0 (54/100). Corrigé (FR-016, T083) ; relecture complète : 79/100 |
+| 4, 6 | ✅ Sur le profil réel, avec validation de l'utilisateur : Sélection +2 éléments, Infos +1 preuve chiffrée, 2 expériences réécrites en résultats ; chaque modification relue sur la page (conforme) ; annonce au réseau désactivée. Note : 79 → 85/100 |
+| 5 | ✅ Post réel 82 → 93 (`humanizer.py`) ; post d'annonce du skill 91 → 96, 846 caractères |

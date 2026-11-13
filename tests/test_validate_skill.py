@@ -1,5 +1,6 @@
 """Tests de tools/validate_skill.py."""
 
+import re
 import shutil
 import tempfile
 import unittest
@@ -71,7 +72,9 @@ class ValidateSkillTests(unittest.TestCase):
 
     def test_versions_differentes(self):
         cl = self.racine / "CHANGELOG.md"
-        cl.write_text(cl.read_text(encoding="utf-8").replace("[0.1.0]", "[9.9.9]"), encoding="utf-8")
+        texte = re.sub(r"^## \[\d+\.\d+\.\d+\]", "## [9.9.9]", cl.read_text(encoding="utf-8"),
+                       count=1, flags=re.MULTILINE)
+        cl.write_text(texte, encoding="utf-8")
         self.assertEqual(self.valider().returncode, 1)
 
     def test_plugin_absent_tolere_sans_strict(self):

@@ -19,8 +19,9 @@ claude plugin install linkedin-coach@linkedin-coach
 ```
 
 Vérifiez avec `claude plugin list` : `linkedin-coach@linkedin-coach` doit être `enabled`.
-Le skill s'appelle alors `/linkedin-coach:linkedin-coach`, mais il se déclenche aussi tout
-seul quand vous écrivez par exemple « audite mon profil LinkedIn ».
+Le skill se déclenche tout seul quand vous écrivez par exemple « audite mon profil
+LinkedIn ». Le plugin ajoute aussi quatre commandes : `/linkedin-coach:audit`,
+`/linkedin-coach:improve`, `/linkedin-coach:post` et `/linkedin-coach:positioning`.
 
 ## 2. Une commande, pour Claude Code et les autres agents
 

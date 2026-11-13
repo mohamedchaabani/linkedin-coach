@@ -4,6 +4,10 @@ Just talk normally: the skill picks the mode from your request. On first use it 
 most 7 questions to learn your positioning. The skill works in French or English, based on
 the language you choose during onboarding.
 
+In Claude Code, each mode also has a command: `/linkedin-coach:audit`,
+`/linkedin-coach:improve [section and goal]`, `/linkedin-coach:post [fact]` and
+`/linkedin-coach:positioning [change]`.
+
 ## Audit
 
 - "Audit my LinkedIn profile" + your LinkedIn data archive (.zip), PDF export or a

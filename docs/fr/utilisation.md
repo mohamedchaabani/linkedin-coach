@@ -3,6 +3,10 @@
 Parlez normalement : le skill reconnaît le mode à partir de votre demande. Au tout premier
 usage, il vous pose au plus 7 questions pour connaître votre positionnement.
 
+Dans Claude Code, chaque mode a aussi sa commande : `/linkedin-coach:audit`,
+`/linkedin-coach:improve [section et objectif]`, `/linkedin-coach:post [fait]` et
+`/linkedin-coach:positioning [changement]`.
+
 ## Audit
 
 - « Audite mon profil LinkedIn » + votre archive LinkedIn (.zip), votre export PDF ou un

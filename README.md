@@ -26,6 +26,7 @@ You still talk to Claude in plain language. The skill changes what Claude does w
 | **Facts** | Tends to embellish ("+40% performance") | Nothing made up: missing data becomes `{{à confirmer}}` |
 | **Your data** | You paste sections by hand | Reads the official LinkedIn data archive directly |
 | **Acting on your profile** | — | With Claude in Chrome: applies each change after your "yes", then checks it on the page. Never publishes |
+| **Shortcuts** | Free-form chat only | Dedicated commands: `/linkedin-coach:audit`, `:improve`, `:post`, `:positioning` |
 | **Method** | General advice | 20 hook formulas, LinkedIn format rules, fixes ordered by points lost, strict scores |
 
 ## What the skill does
@@ -69,8 +70,16 @@ In a Claude Code session:
 ```
 
 Check with `/plugin`: `linkedin-coach` should be enabled. The skill triggers on its own
-when you write "audit my LinkedIn profile", or you can call it with
-`/linkedin-coach:linkedin-coach`.
+when you write "audit my LinkedIn profile", or you can use its commands:
+
+| Command | What it does |
+|---|---|
+| `/linkedin-coach:audit` | Scored audit of your profile and posts |
+| `/linkedin-coach:improve [section and goal]` | Rewrite a section, e.g. `headline for architect roles in Geneva` |
+| `/linkedin-coach:post [fact]` | Write a post, e.g. `the AEM migration we finished last week` |
+| `/linkedin-coach:positioning [change]` | Show or update your positioning, e.g. `add Geneva` |
+
+In the Claude app, commands aren't available: just write your request in plain language.
 
 ### Claude app (web, desktop, mobile)
 
@@ -111,6 +120,9 @@ with network" option stays off unless you explicitly ask for it.
 Open Claude Code (or your "LinkedIn Coach" project in the Claude app) and write:
 
 > Audit my LinkedIn profile
+
+In Claude Code you can also type `/linkedin-coach:audit`. Each step below gives the
+matching command.
 
 ### Step 2: answer the positioning questions (first time only)
 
@@ -172,6 +184,8 @@ Say "yes" when the skill offers to continue, or ask directly:
 
 > Rewrite my headline for solution architect roles in Geneva
 
+Command: `/linkedin-coach:improve headline for solution architect roles in Geneva`.
+
 It works **one section at a time**, starting with the one that lost the most points. For
 each one you get a ready-to-paste block. If Claude in Chrome is connected:
 
@@ -185,6 +199,8 @@ each one you get a ready-to-paste block. If Claude in Chrome is connected:
 
 > Write a post about the migration we finished last week
 
+Command: `/linkedin-coach:post the migration we finished last week`.
+
 If the idea is vague, it asks one grouped question to get a **true, specific fact**. You
 get 3 hooks, a 700–900 character post and a "POST READY" card with the humanizer score.
 **You publish it yourself**: the skill never posts.
@@ -195,6 +211,8 @@ Run "Audit my LinkedIn profile" again in a few weeks. The skill compares with yo
 audit and shows what improved. To change your target or details at any time:
 
 > Update my positioning: add Geneva
+
+Command: `/linkedin-coach:positioning add Geneva`.
 
 More examples and what the skill refuses: [docs/en/usage.md](docs/en/usage.md).
 

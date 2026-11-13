@@ -4,6 +4,15 @@ Toutes les évolutions visibles du skill sont notées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 [sémantique](https://semver.org/lang/fr/).
 
+## [0.2.0] - Non publié
+
+### Ajouté
+
+- Commandes Claude Code : `/linkedin-coach:audit`, `/linkedin-coach:improve`,
+  `/linkedin-coach:post`, `/linkedin-coach:positioning`.
+- README principal en anglais (`README.fr.md` en français), tutoriel pas à pas,
+  connexion de Claude in Chrome, section « Pourquoi pas simplement demander à Claude ? ».
+
 ## [0.1.0] - 2026-11-13
 
 ### Ajouté

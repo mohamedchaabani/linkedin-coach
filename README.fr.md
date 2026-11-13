@@ -27,6 +27,7 @@ Vous parlez toujours à Claude en langage naturel. Le skill change ce que Claude
 | **Faits** | Tendance à enjoliver (« +40 % de performance ») | Rien d'inventé : une donnée manquante devient `{{à confirmer}}` |
 | **Vos données** | Vous collez les sections à la main | Lit directement l'archive officielle LinkedIn |
 | **Agir sur le profil** | — | Avec Claude in Chrome : applique chaque modification après votre « oui », puis la vérifie sur la page. Ne publie jamais |
+| **Raccourcis** | Conversation libre uniquement | Commandes dédiées : `/linkedin-coach:audit`, `:improve`, `:post`, `:positioning` |
 | **Méthode** | Conseils généraux | 20 formules d'accroche, règles de format LinkedIn, corrections classées par points perdus, notes sévères |
 
 ## Ce que fait le skill
@@ -69,8 +70,16 @@ Dans une session Claude Code :
 ```
 
 Vérifiez avec `/plugin` : `linkedin-coach` doit être activé. Le skill se déclenche tout seul
-quand vous écrivez « audite mon profil LinkedIn », ou s'appelle avec
-`/linkedin-coach:linkedin-coach`.
+quand vous écrivez « audite mon profil LinkedIn », ou s'utilise avec ses commandes :
+
+| Commande | Ce qu'elle fait |
+|---|---|
+| `/linkedin-coach:audit` | Audit noté du profil et des posts |
+| `/linkedin-coach:improve [section et objectif]` | Réécrire une section, ex. `titre pour des postes d'architecte à Genève` |
+| `/linkedin-coach:post [fait]` | Écrire un post, ex. `la migration AEM finie la semaine dernière` |
+| `/linkedin-coach:positioning [changement]` | Voir ou mettre à jour le positionnement, ex. `ajoute Genève` |
+
+Dans l'app Claude, les commandes ne sont pas disponibles : écrivez simplement votre demande.
 
 ### App Claude (web, desktop, mobile)
 
@@ -114,6 +123,9 @@ réseau » reste désactivée sauf demande explicite.
 Ouvrez Claude Code (ou votre projet « LinkedIn Coach » dans l'app Claude) et écrivez :
 
 > Audite mon profil LinkedIn
+
+Dans Claude Code, vous pouvez aussi taper `/linkedin-coach:audit`. Chaque étape ci-dessous
+donne la commande correspondante.
 
 ### Étape 2 : répondre aux questions de positionnement (la première fois)
 
@@ -176,6 +188,8 @@ Répondez « oui » quand le skill propose d'enchaîner, ou demandez directement
 
 > Réécris mon titre pour des postes d'architecte solution à Genève
 
+Commande : `/linkedin-coach:improve titre pour des postes d'architecte solution à Genève`.
+
 Il avance **une section à la fois**, en commençant par celle qui perd le plus de points. Pour
 chacune, vous recevez un bloc prêt à copier. Si Claude in Chrome est connecté :
 
@@ -190,6 +204,8 @@ chacune, vous recevez un bloc prêt à copier. Si Claude in Chrome est connecté
 
 > Écris un post sur la migration qu'on a finie la semaine dernière
 
+Commande : `/linkedin-coach:post la migration qu'on a finie la semaine dernière`.
+
 Si l'idée est vague, il pose une seule question groupée pour obtenir un **fait vrai et
 précis**. Vous recevez 3 accroches, un post de 700 à 900 caractères et une fiche « POST
 PRÊT » avec le score humanizer. **Vous publiez vous-même** : le skill ne publie jamais.
@@ -201,6 +217,8 @@ dernier audit et montre ce qui a progressé. Pour changer votre cible ou vos inf
 moment :
 
 > Mets à jour mon positionnement : ajoute Genève
+
+Commande : `/linkedin-coach:positioning ajoute Genève`.
 
 Plus d'exemples et ce que le skill refuse : [docs/fr/utilisation.md](docs/fr/utilisation.md).
 

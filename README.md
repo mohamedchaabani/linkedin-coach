@@ -1,17 +1,36 @@
 # LinkedIn Coach
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/mohamedchaabani/linkedin-coach)](https://github.com/mohamedchaabani/linkedin-coach/releases/latest)
+[![CI](https://github.com/mohamedchaabani/linkedin-coach/actions/workflows/ci.yml/badge.svg)](https://github.com/mohamedchaabani/linkedin-coach/actions/workflows/ci.yml)
+
 *[Version française](README.fr.md)*
 
-**A LinkedIn coach that remembers you, scores you, tracks your progress, and writes posts
-that don't sound like AI.**
+**Recruiters search LinkedIn every day. This Claude skill makes sure they find you.**
 
-An open source skill for Claude that helps you **get found and contacted by recruiters and
-clients** on LinkedIn: a scored audit of your profile and posts, ready-to-paste rewrites,
-and short posts built on your real work.
+It reads your profile the way a recruiter does, scores it out of 100, rewrites what's weak
+using **only your real facts**, and writes posts that don't sound like AI. With Claude in
+Chrome, it applies the changes for you, one approval at a time.
 
-Free, MIT-licensed, no paid service and no dependencies. Works with Claude Code (macOS,
-Windows, Linux) and in the Claude app (web, desktop, iPhone/iPad, Android). Paired with
-**Claude in Chrome**, it can read your own profile and apply the changes you approve.
+> **Real result:** an AEM architect's profile went from **79 to 85/100** in one session.
+> The Featured section went from 1 item to 3, and two job entries turned from tasks into
+> measured results ("a daily job dropped from 6 h to 5 min").
+> [See the before/after ↓](#before--after-a-real-profile)
+
+## Try it in one minute
+
+In Claude Code:
+
+```
+/plugin marketplace add mohamedchaabani/linkedin-coach
+/plugin install linkedin-coach@linkedin-coach
+```
+
+Then type `/linkedin-coach:audit`, or simply *"Audit my LinkedIn profile"*.
+
+Free and MIT-licensed. No account to create, no paid service, no data sent anywhere except
+your conversation with Claude. Using the Claude app instead?
+[Install the .zip](#claude-app-web-desktop-mobile).
 
 ## Why not just ask Claude?
 
@@ -45,8 +64,7 @@ them up.
 | Other criteria | 67 | 67 | Unchanged |
 | **Profile score** | **79/100** | **85/100** | |
 
-Still open, and the skill says so: results with numbers for the current role (+6) and a
-headline that says who the work was for (+3).
+The skill doesn't stop at 85: [see what it suggests next ↓](#what-the-skill-tells-you-next).
 
 ### Experience: tasks become results
 
@@ -86,6 +104,40 @@ lines only). No fact was added. Scores measured by `scripts/humanizer.py`.
 
 What changed: "écosystème" (a typical AI word) removed, a first-person voice, more varied
 sentence lengths, and a closing question that invites comments.
+
+## What the skill tells you next
+
+A score alone doesn't help. After every audit, the skill ranks the next fixes by points
+and gives you text ready to paste. Here is what it suggested to the author for the
+85 → 95 stretch:
+
+**1. Current role: from tasks to results (+6 points)**
+
+- Before: *Built a local AI review agent so developers catch issues before the GitLab AI
+  review*
+- Suggested: *Built a local AI review agent that catches issues before the GitLab AI
+  review: `{{issues caught per sprint}}`*
+
+The skill won't fill in `{{…}}` for you. It asks you for the real number, or leaves the
+placeholder.
+
+**2. Headline: say who the work was for (+3 points)**
+
+- Before: role, certification and keywords, but not who the work was for.
+- Suggested: *AEM Architect & Java Software Architect | Adobe Certified Master | Led AEM as a
+  Cloud Service migrations for global hotel and luxury brands | Teams up to 12 | 15+ yrs
+  Java/JEE*
+
+"AEM Architect" is the exact phrase recruiters type into LinkedIn search.
+
+**3. Roles older than 10 years: one line each (+1 point)**
+
+- Before: 4 bullet points for a 2015 role.
+- Suggested: *Technical project manager on Adobe CQ5.6: releases, environments and
+  delivery automation.*
+
+What a rewrite can't create (recommendations, an activity history), the skill tells you
+plainly instead of inflating your score.
 
 ## What the skill does
 

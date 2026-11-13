@@ -1,18 +1,37 @@
 # LinkedIn Coach
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/mohamedchaabani/linkedin-coach)](https://github.com/mohamedchaabani/linkedin-coach/releases/latest)
+[![CI](https://github.com/mohamedchaabani/linkedin-coach/actions/workflows/ci.yml/badge.svg)](https://github.com/mohamedchaabani/linkedin-coach/actions/workflows/ci.yml)
+
 *[English version](README.md)*
 
-**Un coach LinkedIn qui se souvient de vous, vous note, suit votre progression et écrit des
-posts qui ne sonnent pas « IA ».**
+**Les recruteurs fouillent LinkedIn tous les jours. Ce skill Claude fait en sorte qu'ils
+vous trouvent.**
 
-Un skill open source pour Claude qui vous aide à **être trouvé et contacté par des
-recruteurs et des clients** sur LinkedIn : audit noté de votre profil et de vos posts,
-réécritures prêtes à copier, posts courts construits sur votre vrai travail.
+Il lit votre profil comme un recruteur, le note sur 100, réécrit ce qui est faible à partir
+de **vos seuls vrais faits**, et écrit des posts qui ne sonnent pas « IA ». Avec Claude in
+Chrome, il applique les modifications pour vous, une validation à la fois.
 
-Gratuit, sous licence MIT, sans service payant ni dépendance. Fonctionne avec Claude Code
-(macOS, Windows, Linux) et dans l'app Claude (web, desktop, iPhone/iPad, Android). Associé à
-**Claude in Chrome**, il peut lire votre propre profil et appliquer les modifications que
-vous validez.
+> **Résultat réel :** le profil d'un architecte AEM est passé de **79 à 85/100** en une
+> séance. La Sélection est passée de 1 à 3 éléments, et deux expériences sont passées de
+> tâches à résultats mesurés (« un traitement quotidien passé de 6 h à 5 min »).
+> [Voir l'avant/après ↓](#avant--après--un-vrai-profil)
+
+## L'essayer en une minute
+
+Dans Claude Code :
+
+```
+/plugin marketplace add mohamedchaabani/linkedin-coach
+/plugin install linkedin-coach@linkedin-coach
+```
+
+Puis tapez `/linkedin-coach:audit`, ou simplement *« Audite mon profil LinkedIn »*.
+
+Gratuit, sous licence MIT. Aucun compte à créer, aucun service payant, aucune donnée
+envoyée ailleurs que dans votre conversation avec Claude. Vous utilisez l'app Claude ?
+[Installez le .zip](#app-claude-web-desktop-mobile).
 
 ## Pourquoi pas simplement demander à Claude ?
 
@@ -46,8 +65,7 @@ lieu de les inventer.
 | Autres critères | 67 | 67 | Inchangés |
 | **Note profil** | **79/100** | **85/100** | |
 
-Reste à faire, et le skill le dit : des résultats chiffrés pour le poste actuel (+6) et un
-titre qui dit pour qui le travail a été fait (+3).
+Le skill ne s'arrête pas à 85 : [voir ce qu'il propose ensuite ↓](#ce-que-le-skill-vous-propose-ensuite).
 
 ### Expérience : des tâches aux résultats
 
@@ -88,6 +106,41 @@ modifiées seulement). Aucun fait n'a été ajouté. Scores mesurés par
 
 Ce qui a changé : « écosystème » (mot typique de l'IA) retiré, une voix à la 1re personne,
 des phrases de longueurs plus variées, et une question finale qui invite aux commentaires.
+
+## Ce que le skill vous propose ensuite
+
+Une note seule ne sert à rien. Après chaque audit, le skill classe les prochaines
+corrections par points et vous donne le texte prêt à coller. Voici ce qu'il a proposé à
+l'auteur pour passer de 85 à 95 :
+
+**1. Poste actuel : des tâches aux résultats (+6 points)**
+
+- Avant : *Built a local AI review agent so developers catch issues before the GitLab AI
+  review*
+- Proposé : *Built a local AI review agent that catches issues before the GitLab AI
+  review: `{{issues caught per sprint}}`*
+
+Le skill ne remplit pas les `{{…}}` à votre place. Il vous demande le vrai chiffre, ou
+laisse le champ à compléter.
+
+**2. Titre : dire pour qui (+3 points)**
+
+- Avant : rôle, certification et mots-clés, mais pas pour qui.
+- Proposé : *AEM Architect & Java Software Architect | Adobe Certified Master | Led AEM as a
+  Cloud Service migrations for global hotel and luxury brands | Teams up to 12 | 15+ yrs
+  Java/JEE*
+
+« AEM Architect » est la requête exacte que tapent les recruteurs dans la recherche
+LinkedIn.
+
+**3. Postes de plus de 10 ans : une ligne chacun (+1 point)**
+
+- Avant : 4 puces pour un poste de 2015.
+- Proposé : *Technical project manager on Adobe CQ5.6: releases, environments and
+  delivery automation.*
+
+Ce qu'une réécriture ne peut pas créer (recommandations, historique d'activité), le skill
+vous le dit franchement au lieu de gonfler la note.
 
 ## Ce que fait le skill
 

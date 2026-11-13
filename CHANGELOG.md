@@ -4,7 +4,7 @@ Toutes les évolutions visibles du skill sont notées ici.
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) ; versionnage
 [sémantique](https://semver.org/lang/fr/).
 
-## [0.1.0] - Non publié
+## [0.1.0] - 2026-11-13
 
 ### Ajouté
 
